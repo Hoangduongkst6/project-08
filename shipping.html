@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shipping | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- Shipping -->
+    <main class="shipping-pages">
+        <div class="container">
+
+            <!-- Section detail -->
+            <div class="section-detail">
+
+                <!-- Search bar -->
+                <div class="search-bar d-none d-md-flex">
+                    <input class="search-bar__input" placeholder="Search for item" type="text" name="" id="">
+                    <button class="search-bar__submit">
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar__submit-icon icon-color">
+                    </button>
+                </div>
+
+                <div class="section-detail__top section-detail__top--active">
+                    <div class="section-detail__group">
+                        <div class="section-detail__child">
+                            <a href="./index-logined.html" class="section-detail__child-text">Home</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="./checkout.html" class="section-detail__child-text">checkout</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="#!"
+                                class="section-detail__child-text section-detail__child-text--active">Shipping</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- shipping content -->
+            <div class="shipping-content">
+
+                <div class="row">
+                    <div class="col-8 col-xl-12">
+                        <section class="favourite__list">
+
+                            <h2 class="shipping__heading">1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
+
+                            <div class="favourite__line"></div>
+
+                            <div class="shipping__address">
+                                <div class="shipping__address-inner">
+                                    <div class="shipping__address-left">
+                                        <h3 class="shipping__address-left-heading">Shipping address</h3>
+                                        <p class="shipping__address-left-text">Where should we deliver your order?</p>
+                                    </div>
+
+                                    <label for="modal-address-new-shopping" class="shipping__address-right">
+                                        <bottom class="shipping__address-right-cta btn btn--primary btn--rounded">
+                                            <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                class="shipping__address-right-cta-icon">
+                                            Add a new address
+                                        </bottom>
+                                    </label>
+                                </div>
+
+                                <div class="shipping__info">
+                                    <label>
+                                        <input checked class="favourite__check-all-input" type="checkbox" name="" id="">
+                                    </label>
+
+                                    <div class="shipping__info-inner">
+                                        <span class="shipping__info-inner-name">Imran Khan</span>
+                                        <span class="shipping__info-inner-location">Museum of Rajas, Sylhet Sadar,
+                                            Sylhet 3100.</span>
+                                        <ul class="shipping__info-wrap">
+                                            <li class="shipping__info-wrap-text">Shipping</li>
+                                            <li class="shipping__info-wrap-text">Delivery from store</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="shipping__info-edit">
+                                        <label for="modal-address-new-shopping" class="shipping__info-edit-wrap">
+                                            <img src="./assets/icons/edia.svg" alt="" class="shipping__info-edit-icon">
+                                            <span class="shipping__info-edit-text">Edit</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="shipping__info">
+                                    <label>
+                                        <input class="favourite__check-all-input" type="checkbox" name="" id="">
+                                    </label>
+
+                                    <div class="shipping__info-inner">
+                                        <span class="shipping__info-inner-name">Imran Khan</span>
+                                        <span class="shipping__info-inner-location">Al Hamra City (10th Floor), Hazrat
+                                            Shahjalal Road, Sylhet, Sylhet, Bangladesh</span>
+                                        <ul class="shipping__info-wrap">
+                                            <li class="shipping__info-wrap-text">Shipping</li>
+                                            <li class="shipping__info-wrap-text">Delivery from store</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="shipping__info-edit">
+                                        <label for="modal-address-new-shopping" class="shipping__info-edit-wrap">
+                                            <img src="./assets/icons/edia.svg" alt="" class="shipping__info-edit-icon">
+                                            <span class="shipping__info-edit-text">Edit</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="shipping__heading-h3">Items details</h3>
+
+                            <!-- Checkout item 1 -->
+                            <div class="favourite__item favourite__item-checkout">
+
+                                <a href="./product-detail.html" class="favourite__image">
+                                    <img src="./assets/images/product-1.png" alt="" class="favourite__image-img">
+                                </a>
+
+                                <div class="favourite__body">
+                                    <a href="./product-detail.html" class="favourite__title">
+                                        <h3 class="favourite__title-heading">Coffee Beans - Espresso Arabica
+                                            and Robusta Beans
+                                        </h3>
+                                    </a>
+
+                                    <div class="favourite__cart">
+                                        <span class="favourite__cart-price">$47.00 |</span>
+                                        <span class="favourite__cart-text">In Stock</span>
+                                    </div>
+
+                                    <div class="favourite__foot">
+                                        <div class="favourite__foot-body">
+                                            <div class="favourite__inner">
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                    <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                        class="favourite__inner-ctrl-arrow icon-color">
+                                                </div>
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                    <span class="favourite__inner-ctrl-number">1</span>
+                                                    <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__right favourite__right--checkout">
+                                    <span class="favourite__right-price">$47.00</span>
+                                    <div class="favourite__inner favourite__inner--max-top">
+                                        <button type="text" class="favourite__inner-function">
+                                            <img src="./assets/icons/heart-off.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Save</span>
+                                        </button>
+                                        <label for="modal-remove-shopping" type="text"
+                                            class="favourite__inner-function">
+                                            <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Delete</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="favourite__line"></div>
+
+                            <!-- Checkout item 2 -->
+                            <div class="favourite__item favourite__item-checkout">
+
+                                <a href="./product-detail.html" class="favourite__image">
+                                    <img src="./assets/images/product-2.png" alt="" class="favourite__image-img">
+                                </a>
+
+                                <div class="favourite__body">
+                                    <a href="./product-detail.html" class="favourite__title">
+                                        <h3 class="favourite__title-heading">Coffee Beans - Espresso Arabica
+                                            and Robusta Beans
+                                        </h3>
+                                    </a>
+
+                                    <div class="favourite__cart">
+                                        <span class="favourite__cart-price">$47.00 |</span>
+                                        <span class="favourite__cart-text">In Stock</span>
+                                    </div>
+
+                                    <div class="favourite__foot">
+                                        <div class="favourite__foot-body">
+                                            <div class="favourite__inner">
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                    <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                        class="favourite__inner-ctrl-arrow icon-color">
+                                                </div>
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                    <span class="favourite__inner-ctrl-number">1</span>
+                                                    <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__right favourite__right--checkout">
+                                    <span class="favourite__right-price">$47.00</span>
+                                    <div class="favourite__inner favourite__inner--max-top">
+                                        <button type="text" class="favourite__inner-function">
+                                            <img src="./assets/icons/heart-off.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Save</span>
+                                        </button>
+                                        <label for="modal-remove-shopping" type="text"
+                                            class="favourite__inner-function">
+                                            <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Delete</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="favourite__line"></div>
+
+                            <!-- Checkout item 3 -->
+                            <div class="favourite__item favourite__item-checkout">
+
+                                <a href="./product-detail.html" class="favourite__image">
+                                    <img src="./assets/images/product-3.png" alt="" class="favourite__image-img">
+                                </a>
+
+                                <div class="favourite__body">
+                                    <a href="./product-detail.html" class="favourite__title">
+                                        <h3 class="favourite__title-heading">Coffee Beans - Espresso Arabica
+                                            and Robusta Beans
+                                        </h3>
+                                    </a>
+
+                                    <div class="favourite__cart">
+                                        <span class="favourite__cart-price">$47.00 |</span>
+                                        <span class="favourite__cart-text">In Stock</span>
+                                    </div>
+
+                                    <div class="favourite__foot">
+                                        <div class="favourite__foot-body">
+                                            <div class="favourite__inner">
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                    <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                        class="favourite__inner-ctrl-arrow icon-color">
+                                                </div>
+                                                <div type="text" class="favourite__inner-ctrl">
+                                                    <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                    <span class="favourite__inner-ctrl-number">1</span>
+                                                    <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                        class="favourite__inner-ctrl-icon icon-color">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__right favourite__right--checkout">
+                                    <span class="favourite__right-price">$47.00</span>
+                                    <div class="favourite__inner favourite__inner--max-top">
+                                        <button type="text" class="favourite__inner-function">
+                                            <img src="./assets/icons/heart-off.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Save</span>
+                                        </button>
+                                        <label for="modal-remove-shopping" type="text"
+                                            class="favourite__inner-function">
+                                            <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                class="favourite__inner-function-icon">
+                                            <span class="favourite__inner-function-text">Delete</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="favourite__line d-md-none"></div>
+
+                            <div class="checkout__foot d-md-none">
+                                <a href="./index-logined.html">
+                                    <div class="favourite__foot-inner">
+                                        <img src="./assets/icons/favourite/arrow-left.svg" alt=""
+                                            class="favourite__foot-inner-arrow-left icon-color">
+                                        <span class="favourite__foot-inner-text">Continue Shopping</span>
+                                    </div>
+                                </a>
+
+                                <div class="checkout__container">
+                                    <div class="checkout__foot-row">
+                                        <span class="checkout__foot-row-label">Subtotal:</span>
+                                        <span class="checkout__foot-row-value">$191.65</span>
+                                    </div>
+                                    <div class="checkout__foot-row">
+                                        <span class="checkout__foot-row-label">Shipping:</span>
+                                        <span class="checkout__foot-row-value">$10:00</span>
+                                    </div>
+
+                                    <div class="favourite__line"></div>
+
+                                    <div class="checkout__foot-row  checkout__foot-row-total">
+                                        <span
+                                            class="checkout__foot-row-label checkout__foot-row-label--total">Total:</span>
+                                        <span
+                                            class="checkout__foot-row-value checkout__foot-row-value--total">$201.65</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
+
+                    <div class="col-4 col-xl-12">
+                        <section class="favourite__list">
+                            <div class="checkout">
+                                <div class="checkout__inner">
+                                    <div class="checkout__row">
+                                        <span class="checkout__row-label">Subtotal <span
+                                                class="checkout__row-note">(items)</span></span>
+                                        <span class="checkout__row-number">3</span>
+                                    </div>
+                                    <div class="checkout__row">
+                                        <span class="checkout__row-label">Price <span
+                                                class="checkout__row-note">(Total)</span></span>
+                                        <span class="checkout__row-number">$191.65</span>
+                                    </div>
+                                    <div class="checkout__row">
+                                        <span class="checkout__row-label">Shipping</span>
+                                        <span class="checkout__row-number">$10.00</span>
+                                    </div>
+                                    <div class="checkout__row checkout__row--active">
+                                        <span class="checkout__row-label">Estimated Total</span>
+                                        <span class="checkout__row-number">$201.65</span>
+                                    </div>
+                                </div>
+
+                                <div class="checkout__cta">
+                                    <a href="./payment.html">
+                                        <div class="checkout__cta-btn btn btn--primary btn--rounded">Continue to
+                                            checkout
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="favourite__list checkout__gift--active">
+                            <div class="checkout__gift">
+                                <div class="checkout__gift-image">
+                                    <img src="./assets/icons/gift.svg" alt="gift" class="checkout__gift-image-img">
+                                </div>
+                                <div class="checkout__gift-box">
+                                    <h3 class="checkout__gift-box-heading">Send this order as a gift.</h3>
+                                    <span class="checkout__gift-box-text">Available items will be shipped to your gift
+                                        recipient.
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script id="footer">
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <!-- Modal: confirm remove shopping cart item -->
+    <input type="checkbox" hidden name="" class="modal-input" id="modal-remove-shopping">
+
+    <div class="modal modal--small">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <div class="modal__text">Do you want to remove this item from shopping cart?</div>
+            <div class="modal__bottom">
+                <label for="modal-remove-shopping" class="btn btn--text modal__btn">Cancel</label>
+                <label for="modal-remove-shopping" class="btn btn--primary modal__btn">Confirm</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: add new shopping address -->
+    <input type="checkbox" hidden name="" class="modal-address-new" id="modal-address-new-shopping">
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__content">
+            <h2 class="modal__heading">Add new shipping address</h2>
+            <div class="modal__body">
+                <div class="form__row">
+
+                    <div class="form__inner">
+                        <div class="form__inner-control">
+                            <label for="form__inner-click-name"
+                                class="form__inner-label form__inner-label--small">Name</label>
+                            <input type="text" placeholder="Name" id="form__inner-click-name" class="form__inner-input">
+                        </div>
+                    </div>
+
+                    <div class="form__inner">
+                        <div class="form__inner-control">
+                            <label for="form__inner-click-Phone"
+                                class="form__inner-label form__inner-label--small">Phone</label>
+                            <input type="text" placeholder="Phone" id="form__inner-click-Phone"
+                                class="form__inner-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__inner">
+                    <div class="form__inner-control">
+                        <label for="form__inner-click-Phone"
+                            class="form__inner-label form__inner-label--small">Address</label>
+                        <div class="form__text-area">
+                            <textarea name="" id="" placeholder="Address (Area and street)"
+                                class="form__inner-input form__text-area-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__inner">
+                    <div class="form__inner-control">
+                        <label for="form__inner-click-Phone"
+                            class="form__inner-label form__inner-label--small">City/District/Town</label>
+                        <input type="text" placeholder="City/District/Town" id="form__inner-click-Phone"
+                            class="form__inner-input">
+                    </div>
+                </div>
+
+                <div class="form__inner form__box">
+                    <div class="form__confirm">
+                        <input type="checkbox" hidden name="" id="form__checkbox" class="form__confirm-input">
+                        <label for="form__checkbox" class="form__confirm-label">Set as default card</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <label for="modal-address-new-shopping" class="btn btn--text modal__btn">Cancel</label>
+                <label for="modal-address-new-shopping" class="btn btn--primary modal__btn">Create</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

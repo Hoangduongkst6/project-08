@@ -1,0 +1,125 @@
+@use "../abstracts";
+
+html {
+    --text-color: #1A162E;
+    --body-bg-color: #f6f6f6;
+    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(22%) saturate(1927%) hue-rotate(212deg) brightness(99%) contrast(96%);
+    
+    // header
+    --header-bg-color: #eee;
+
+    // act-top
+    --act-top-bg-color: #fff;
+    --act-box-shadow: rgba(237, 237, 246, 0.20);
+
+    // sub-nav
+    --sub-nav-bg-color: #fff;
+    --sub-nav-color: #1A162E;
+    --sub-nav-line: #D2D1D6;
+    --sub-nav-before-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(323deg) brightness(101%) contrast(100%);
+    --sub-nav-box-shadow-color: rgba(200, 200, 200, 0.40);
+    --sub-nav-head-color: brightness(0) saturate(100%) invert(9%) sepia(22%) saturate(1583%) hue-rotate(210deg) brightness(93%) contrast(97%);
+
+    // bras
+    --bras-color: brightness(0) saturate(100%) invert(5%) sepia(27%) saturate(4774%) hue-rotate(236deg) brightness(98%) contrast(91%);
+    
+    // drawer
+    --drawer-color-back: brightness(0) saturate(100%) invert(3%) sepia(98%) saturate(2610%) hue-rotate(240deg) brightness(93%) contrast(87%);
+    
+    // category 
+    --category-bg-color: #eee;
+    @include abstracts.screen(md) {
+        --category-bg-color: #fff;
+    }
+
+    --category-img-color: #fff;
+
+    // product
+    --product-bg-color: #fff;
+    --product-shadow: rgba(237, 237, 246, 0.20);
+    --product-heart-bg-color: #fff;
+    --product-box-bg-color: #fff;
+    --product-box-color: #6C6C72;
+    --product-box-icon: brightness(0) saturate(100%) invert(8%) sepia(7%) saturate(5480%) hue-rotate(211deg) brightness(96%) contrast(96%);;
+    --product-box-heart-color: brightness(0) saturate(100%) invert(8%) sepia(7%) saturate(5875%) hue-rotate(213deg) brightness(94%) contrast(95%);
+    --product-color: #1A162E;
+    
+    // category
+    --category-price-color: #000;
+
+    // filter
+    --filter-shadow: rgba(200, 200, 200, 0.40);
+    --filter-bg-color: #fff;
+    --filter-tag-bg-color: #F8F8FB;
+    --filter-image-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(170deg) brightness(105%) contrast(103%);
+
+    --filter-select-color: #EDEDF6;
+
+    // search
+    --search-input-gb-color: #fff;
+    --search-icon-color: brightness(0) saturate(100%) invert(98%) sepia(4%) saturate(0%) hue-rotate(347deg) brightness(103%) contrast(101%);
+
+    // footer
+    --footer-gb-color: #eee;
+
+    // auth
+    --auth-form-color: #D2D1D6;
+    --auth-content-bg-color: #fff;
+    --auth-content-color: #1A162E;
+    --auth-sign-in-icon-color: brightness(0) saturate(100%) invert(8%) sepia(8%) saturate(4728%) hue-rotate(212deg) brightness(91%) contrast(96%);
+    --auth-content-cta-color: #1A162E;
+
+    // section detail-top
+    --section-detail-top-bg-color: #F6F6F6;
+    @include abstracts.screen(md) {
+        --section-detail-top-bg-color: #fff;
+    }
+
+    --section-detail-top-active-bg-color: #fff;
+
+    --section-detail-top-shadow: rgba(237, 237, 246, 0.20);
+    --pages-bg-color: #fafafd;
+
+    // product-detail
+    --product-info-bg-color: #f6f6f6;
+    @include abstracts.screen(md) {
+        --product-info-bg-color: #fff;
+    }
+    
+    --product__money-cta-color: #1A162E;
+    --product__tab-review-color: #FAFAFD;
+
+    // act dropdown
+    --act-dropdown-bg-color: #fff;
+    --act-dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --act-dropdown-icon: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4901%) hue-rotate(117deg) brightness(103%) contrast(108%);
+    --act-dropdown-item-color: #d2d1d6;
+
+    // favourite
+    --favourite-function-line: #D2D1D6;
+    --favourite-check-out-bg-color: #fff;
+    --favourite-check-out-shadow: rgba(237, 237, 246, 0.20);
+    --favourite-check-all-input: brightness(0) saturate(100%) invert(8%) sepia(26%) saturate(1492%) hue-rotate(210deg) brightness(99%) contrast(96%);
+
+    // checkout
+    --checkout-gift-image-bg-color: rgba(118, 68, 225, 0.1);
+    --checkout-gift-image: rgba(237, 237, 246, 0.20);
+
+    // shopping
+    --shopping-gb-color: #1A162E;
+    --shipping-edit-icon-color: brightness(0) saturate(100%) invert(6%) sepia(29%) saturate(3344%) hue-rotate(229deg) brightness(96%) contrast(93%);
+
+    // payment
+    --payment-top-inner-bg-color: #F6F6F6;
+
+    // modal
+    --modal-content-bg-color: #fff;
+
+    // project
+    --project-inner-bg-color: #fff;
+    --project-inner-shadow: rgba(237, 237, 246, 0.20);
+    --project-icon-color: brightness(0) saturate(100%) invert(4%) sepia(81%) saturate(2679%) hue-rotate(243deg) brightness(70%) contrast(89%);
+    --project-group-link: #ebebeb;
+    --project-info-item-bg-color: #F6F6F6;
+    --project-info-wrap-bg-color: #fff;
+}

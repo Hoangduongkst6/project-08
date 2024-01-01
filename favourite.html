@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Favourite List | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- Favourite -->
+    <main class="favourite-pages">
+        <div class="container">
+
+            <!-- Section detail -->
+            <div class="section-detail">
+
+                <!-- Search bar -->
+                <div class="search-bar d-none d-md-flex">
+                    <input class="search-bar__input" placeholder="Search for item" type="text" name="" id="">
+                    <button class="search-bar__submit">
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar__submit-icon icon-color">
+                    </button>
+                </div>
+
+                <div class="section-detail__top section-detail__top--active">
+                    <div class="section-detail__group">
+                        <div class="section-detail__child">
+                            <a href="./index-logined.html" class="section-detail__child-text">Home</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="#!"
+                                class="section-detail__child-text section-detail__child-text--active">Favorite</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favourite check-out -->
+            <div class="favourite__check-out">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="favourite__check-out-body">
+                            <h2 class="favourite__check-out-heading">Favourite List</h2>
+                            <p class="favourite__check-out-text">3 items</p>
+
+                            <div class="favourite__check-all">
+                                <label>
+                                    <input class="favourite__check-all-input" type="checkbox" name="" id="">
+                                </label>
+                            </div>
+
+                            <!-- Favourite list -->
+                            <div class="favourite__list">
+                                <!-- Favourite item 1 -->
+                                <div class="favourite__item">
+                                    <label>
+                                        <input checked class="favourite__check-all-input" type="checkbox" name="" id="">
+                                    </label>
+
+                                    <div class="favourite__image">
+                                        <img src="./assets/images/product-1.png" alt="" class="favourite__image-img">
+                                    </div>
+
+                                    <div class="favourite__body">
+                                        <div class="favourite__title">
+                                            <h3 class="favourite__title-heading">Coffee Beans - Espresso Arabica
+                                                and
+                                                Robusta Beans</h3>
+                                        </div>
+
+                                        <div class="favourite__cart">
+                                            <span class="favourite__cart-price">$47.00 |</span>
+                                            <span class="favourite__cart-text">In Stock</span>
+                                        </div>
+
+                                        <div class="favourite__foot">
+                                            <div class="favourite__foot-body">
+                                                <div class="favourite__inner">
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                        <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                            class="favourite__inner-ctrl-arrow icon-color">
+                                                    </div>
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                        <span class="favourite__inner-ctrl-number">1</span>
+                                                        <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                    </div>
+                                                </div>
+                                                <div class="favourite__inner">
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/heart-off.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Save</span>
+                                                    </button>
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Delete</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favourite__right">
+                                        <span class="favourite__right-price">$47.00</span>
+                                        <a href="./checkout.html" type="submit"
+                                            class="favourite__right-cta btn btn--primary btn--rounded">Check
+                                            Out
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__line"></div>
+
+                                <!-- Favourite item 2 -->
+                                <div class="favourite__item">
+                                    <label>
+                                        <input checked class="favourite__check-all-input" type="checkbox" name="" id="">
+                                    </label>
+
+                                    <div class="favourite__image">
+                                        <img src="./assets/images/product-2.png" alt="" class="favourite__image-img">
+                                    </div>
+
+                                    <div class="favourite__body">
+                                        <div class="favourite__title">
+                                            <h3 class="favourite__title-heading">Lavazza Coffee Blends - Try the Italian
+                                                Espresso</h3>
+                                        </div>
+
+                                        <div class="favourite__cart">
+                                            <span class="favourite__cart-price">$53.00 |</span>
+                                            <span class="favourite__cart-text">In Stock</span>
+                                        </div>
+
+                                        <div class="favourite__foot">
+                                            <div class="favourite__foot-body">
+                                                <div class="favourite__inner">
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                        <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                            class="favourite__inner-ctrl-arrow icon-color">
+                                                    </div>
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                        <span class="favourite__inner-ctrl-number">2</span>
+                                                        <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                    </div>
+                                                </div>
+                                                <div class="favourite__inner">
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/heart-off.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Save</span>
+                                                    </button>
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Delete</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favourite__right">
+                                        <span class="favourite__right-price">$106.00</span>
+                                        <a href="./checkout.html" type="submit"
+                                            class="favourite__right-cta btn btn--primary btn--rounded">Check
+                                            Out
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__line"></div>
+
+                                <!-- Favourite item 1 -->
+                                <div class="favourite__item">
+                                    <label>
+                                        <input class="favourite__check-all-input" type="checkbox" name="" id="">
+                                    </label>
+
+                                    <div class="favourite__image">
+                                        <img src="./assets/images/product-3.png" alt="" class="favourite__image-img">
+                                    </div>
+
+                                    <div class="favourite__body">
+                                        <div class="favourite__title">
+                                            <h3 class="favourite__title-heading">Qualità Oro Mountain Grown - Espresso
+                                                Coffee Beans</h3>
+                                        </div>
+
+                                        <div class="favourite__cart">
+                                            <span class="favourite__cart-price">$38.65 |</span>
+                                            <span class="favourite__cart-text">In Stock</span>
+                                        </div>
+
+                                        <div class="favourite__foot">
+                                            <div class="favourite__foot-body">
+                                                <div class="favourite__inner">
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <span class="favourite__inner-ctrl-text">LavAzza</span>
+                                                        <img src="./assets/icons/favourite/arrow.svg" alt=""
+                                                            class="favourite__inner-ctrl-arrow icon-color">
+                                                    </div>
+                                                    <div type="text" class="favourite__inner-ctrl">
+                                                        <img src="./assets/icons/favourite/minus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                        <span class="favourite__inner-ctrl-number">1</span>
+                                                        <img src="./assets/icons/favourite/plus.svg" alt=""
+                                                            class="favourite__inner-ctrl-icon icon-color">
+                                                    </div>
+                                                </div>
+                                                <div class="favourite__inner">
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/heart-off.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Save</span>
+                                                    </button>
+                                                    <button type="text" class="favourite__inner-function">
+                                                        <img src="./assets/icons/favourite/dele.svg" alt=""
+                                                            class="favourite__inner-function-icon">
+                                                        <span class="favourite__inner-function-text">Delete</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favourite__right">
+                                        <span class="favourite__right-price">$38.65</span>
+                                        <a href="./checkout.html" type="submit"
+                                            class="favourite__right-cta btn btn--primary btn--rounded">Check
+                                            Out
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="favourite__line"></div>
+
+                                <!-- Favourite foot -->
+                                <div class="favourite__foot">
+                                    <a href="./index-logined.html">
+                                        <div class="favourite__foot-inner">
+                                            <img src="./assets/icons/favourite/arrow-left.svg" alt=""
+                                                class="favourite__foot-inner-arrow-left icon-color">
+                                            <span class="favourite__foot-inner-text">Continue Shopping</span>
+                                        </div>
+                                    </a>
+                                    <a href="./checkout.html"
+                                        class="favourite__foot-check-out btn btn--primary btn--rounded">All
+                                        Check Out</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script id="footer">
+        load("#footer", "./templates/footer.html");
+    </script>
+</body>
+
+</html>

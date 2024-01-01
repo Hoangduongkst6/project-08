@@ -1,0 +1,146 @@
+@use "../abstracts";
+
+.filter {
+    position: absolute;
+    background: var(--filter-bg-color);
+    filter: drop-shadow(0px 40px 90px var(--filter-shadow));
+    right: 0;
+    top: calc(100% + 30px);
+    padding: 30px;
+    z-index: 99;
+    border-radius: 20px;
+    
+    transition: opacity, visibility, scale;
+    transition-duration: .3s;
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+    transform-origin: 95% top;
+    
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+        scale: 0;
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 30px;
+        column-gap: 30px;
+
+        @include abstracts.screen(xl) {
+            display: grid;
+            margin-top: 20px;
+            row-gap: 20px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: calc(100% - 4px);
+        right: 14px;
+        width: 60px;
+        filter: var(--filter-image-color);
+    }
+
+    &--active {
+        --grid-gutter-x: 60px;
+    }
+
+    &__body {
+        margin-top: 30px;
+    }
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &-line {
+            width: 272px;
+            height: 2px;
+            background: #D2D1D6;
+
+        }
+
+        &-icon-1 {
+            position: absolute;
+            left: var(--filter-value-min);
+        }
+
+        &-icon-2 {
+            position: absolute;
+            left: var(--filter-value-max);
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            display: grid;
+            row-gap: 10px;
+
+            &-label {
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 142.857%
+            }
+
+            &-input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 121px;
+                padding: 8px 12px;
+                gap: 10px;
+                border-radius: 6px;
+                border: 1px solid #D2D1D6;
+                background: transparent;
+            }
+        }
+    }
+
+    &--line {
+        border-right: 2px solid #D2D1D6;
+        border-left: 2px solid #D2D1D6;
+        padding: 0 30px;
+
+        @include abstracts.screen(xl) {
+            border: none;
+            padding: 0;
+        }
+    }
+
+    &__action {
+        margin-top: 18px;
+        column-gap: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-cancel {
+            display: inline-flex;
+            font-size: 1.5rem;
+        }
+        
+        &-show {
+            --btn-height: 38px;
+            display: inline-flex;
+            padding: 0 13.2px;
+            column-gap: 10px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &-search__input--border {
+        border: 1px solid  #D2D1D6 !important;
+    }
+}

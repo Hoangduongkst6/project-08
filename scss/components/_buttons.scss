@@ -1,0 +1,53 @@
+.btn {
+    --btn-height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--btn-height);
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity .15s;
+    white-space: nowrap;
+    user-select: none;
+    
+    &--text {
+        font-weight: 400;
+        background: transparent;
+        color: #9E9DA8;
+    }
+
+    &--primary {
+        background: #FFB700;
+        color: #1A162E;
+    }
+
+    &--outline {
+        background: transparent;
+        color: #1A162E;
+        border: 1px solid #D2D1D6;
+    }
+
+    &--rounded {
+        border-radius: 999px;
+    }
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &--disabled {
+        opacity: .5;
+        cursor: unset;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+
+}

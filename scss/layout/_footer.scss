@@ -1,0 +1,133 @@
+/* Footer section */
+@use "../abstracts";
+
+.footer {
+    padding: 50px 0;
+    background: var(--footer-gb-color);
+
+    &__row {
+        display: grid;
+        grid-template-columns: 2fr 1.2fr 1fr 1fr 1.4fr;
+        gap: 60px;
+
+        @include abstracts.screen(xl) {
+            grid-template-columns: 1.7fr 1fr 1fr;
+            grid-template-rows: repeat(2, .5);
+        }
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: 1.7fr 1fr;
+            grid-template-rows: repeat(3, .5);
+        }
+
+        @include abstracts.screen(sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, .5fr);
+        }
+    }
+
+    &__desc {
+        margin-top: 30px;
+        line-height: 1.5;
+        font-size: 1.4rem;
+    }
+
+    &__help-text {
+        margin-top: 40px;
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    &__form {
+        margin-top: 16px;
+        display: flex;
+        column-gap: 10px;
+
+        &-input {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #d2d1d6;
+            font-size: 1.5rem;
+            font-weight: 500;
+            outline: none;
+        }
+
+        &-cta {
+            --btn-height: 46px;
+            padding: 0 20px;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    &__list {
+        margin-top: 18px;
+    }
+    
+    &__text,
+    &__link {
+        padding: 8px 0;
+        line-height: 1.4;
+        font-size: 1.4rem;  
+    }
+    
+    &__link{
+        display: inline-block;
+
+        &:hover {
+            color: #0071dc;
+        }
+    }
+
+    &__label {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+        }
+    }
+
+    &__text-end {
+        text-align: center;
+    }
+     
+    &__social-network {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background: var(--act-top-bg-color);
+        }            
+
+
+        &-icon {
+            width: 14px;
+            object-fit: contain;
+        }
+    }
+
+}

@@ -1,0 +1,327 @@
+@use "../abstracts";
+
+.sub-nav {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 24px);
+    width: min(1240px, 100%);
+    height: min(582px, 100vh - 158px);
+    display: none;
+
+    @include abstracts.screen(lg) {
+        position: initial;
+        width: 100%;
+        height: 100%;
+    }
+
+    &::before {
+        content: url(../../assets/icons/sub-nav.svg);
+        position: absolute;
+        top: -14px;
+        left: var(--arrow-left-pos);
+        translate: -50%;
+        width: 30px;
+        height: 23px;
+        filter: var(--sub-nav-before-color);
+        z-index: 999;
+
+        @include abstracts.screen(lg) {
+            content: none;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 60px;
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: -60px;
+
+        @include abstracts.screen(lg) {
+            content: none;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        background: var(--sub-nav-bg-color);
+        filter: drop-shadow( 0px 40px 90px var(--sub-nav-box-shadow-color));
+        border-radius: 20px;
+        display: flex;
+        overflow-y: auto;
+        z-index: 99;
+        padding: 30px 62px 30px 30px;
+        width: inherit;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            border: 0;
+            background: transparent;
+            padding: 16px 40px;
+            row-gap: 30px;
+        }
+
+        @include abstracts.screen(sm) {
+            padding-left: 20px;
+        }   
+
+        &--gap {
+            column-gap: 47px;
+        }
+    }
+
+    &__box {
+        --sub-nav-parent: 292px;
+        display: grid;
+        row-gap: 30px;
+        width: var(--sub-nav-parent);
+
+        &--line {
+            border-right: 1px solid #D2D1D6;
+            overflow-y: auto;
+            
+            @include abstracts.screen(lg) {
+                border-right: none;
+            }
+        }
+        
+    }
+    
+    &__first {
+        display: flex;
+        column-gap: 77px;
+        padding-left: 30px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            row-gap: 30px;
+            padding-left: 0;
+        }
+
+        &-list {
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 30px;  
+        }
+
+        &--active {
+            display: none;
+            position: absolute;
+            inset: 30px 0 0 var(--sub-nav-parent);
+            padding-left: 60px;
+            overflow-y: auto;
+
+            @include abstracts.screen(lg) {
+                position: initial;
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__line {
+        width: 1px;
+        height: 522px;
+        background: var(--sub-nav-line);
+        margin: 0 30px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+
+        &-icon {
+            position: relative;
+            width: 36px;
+            height: 36px;
+
+            @include abstracts.screen(lg) {
+                display: none;
+            } 
+
+            &-1 {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+
+            &-2 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+        }
+
+        &-heading {
+            color:  var(--sub-nav-color);
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 50px;
+
+        @include abstracts.screen(xl) {
+            margin-left: 0;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-left: 50px;
+        }
+    }
+    
+    &__item {
+        &:first-child > .sub-nav__link {
+            padding-top: 0;
+        }
+
+        &:last-child > .sub-nav__link {
+            padding-bottom: 0;
+        }
+        
+        &:hover > .sub-nav__link {
+            font-weight: 500;
+            color: #0071DC;
+        }
+        
+        &:hover .sub-nav__first--active {
+            display: flex;
+        } 
+    }
+
+    &__link {
+        color: var(--sub-nav-color);
+        font-size: 1.4rem;
+        line-height: 142.857%;
+        width: 100%;
+        display: block;
+        padding: 7px 0;
+        
+    }
+    
+}
+
+
+.bars {
+    padding: 4px 6px;
+    filter: var(--bras-color);
+
+    &__icon {
+        width: 20px;
+
+        @include abstracts.screen(sm) {
+            width: 12px;
+            height: 16px;
+            object-fit: contain;
+        }
+    }
+    
+    &__input-checkbox:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__input-checkbox:checked ~ .drawer {
+        translate: 0%;
+    }
+    
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+
+    @include abstracts.screen(lg) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        z-index: 999;
+    } 
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    background: var(--sub-nav-bg-color);
+    z-index: 999;
+    translate: -100%;
+    transition: translate .3s;
+    padding: 20px 0;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        @include abstracts.screen(lg) {
+            height: calc(100% - 29px);
+            overflow-y: auto;
+        }
+    }
+
+    &__back {
+        display: inline-block;
+        padding: 6px 4px 20px 40px;
+        filter: var(--drawer-color-back);
+
+        @include abstracts.screen(sm) {
+            padding-left: 20px;
+        }
+    }
+
+    &__evaluate {
+        display: flex;
+        flex-direction: column;
+        background: inherit;
+        padding: 0;
+        filter: var(--drawer-color-back);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        filter: var(--drawer-color-back);
+    }
+
+    &-nav {
+    
+         &__item {
+            padding: 10px 20px;
+         }
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__box {
+
+            &-arrow-bottom {
+                display: none;
+            }
+        }
+
+    }
+}

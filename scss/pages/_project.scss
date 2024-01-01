@@ -1,0 +1,362 @@
+@use "../abstracts";
+
+%df-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    &__row {
+        @include abstracts.screen(sm) {
+            --grid-gutter-y : 20px;
+        }
+
+        &-fill {
+            @include abstracts.screen(sm) {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    }
+
+    &__left {
+        border-radius: 20px;
+        background: var(--project-inner-bg-color);  
+        box-shadow: 0px 20px 60px 10px var(--project-inner-shadow);
+    }
+
+    &__head {
+        position: relative;
+        height: 246px;
+        border-radius: 20px 20px 0px 0px;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%), url("../../assets/images/project-1.png") no-repeat center/cover;
+        
+        &-bg-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            @extend %df-center;
+            flex-direction: column;
+            width: 200px;
+
+            &-img {
+                width: 116px;
+                height: 116px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 5px solid rgba(255, 255, 255, 0.2);
+            }
+
+            &-heading {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 144.444%;
+                color: #fff;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            &-text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 146.667%;
+                color: #fff;
+                margin-top: 2px;
+            }
+        }
+    }
+    
+
+    &__body {
+        padding: 30px;
+        display: grid;
+        gap: 30px;
+    }
+
+    &__group {
+        
+        &-heading {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+
+        &-list {
+            margin-top: 16px;
+            display: grid;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-wrap {
+            @extend %df-center;
+            width: 24px;
+            height: 100%;
+
+            &-icon {
+                filter: var(--project-icon-color)
+            }
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            line-height: 146.667%;
+            height: 32px;
+            padding: 0 4px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--project-group-link);
+            }
+        }   
+    }
+
+    &__right {
+        background: var(--project-inner-bg-color);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 20px 60px 10px var(--project-inner-shadow);
+
+        @include abstracts.screen(md) {
+            padding: 16px;
+        }
+
+        &-head {
+
+            &-back {
+                max-width: 235px;
+            }
+        }
+    }
+
+    &__wallet {
+
+        &-list {
+            margin-top: 16px;
+        }
+        &-item {
+            height: 100%;
+            &-img {
+                max-width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        &-wrap {
+            @extend %df-center;
+            flex-direction: column;
+            gap: 14px;
+            height: 100%;
+            border-radius: 10px;
+            border: 1px dashed #D2D1D6;
+
+            @include abstracts.screen(xl) {
+                padding: 56px 0;
+            }
+
+            @include abstracts.screen(md) {
+                height: 293px;
+            }
+
+            @include abstracts.screen(sm) {
+                height: 100%;
+            }
+
+            &-text {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 142.857%;
+            }
+
+            &-icon {
+                filter: var(--project-icon-color)
+            }
+
+        }
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.55rem;
+        line-height: 146.667%;
+        margin-top: 4px;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__info {
+        margin-top: 30px;
+
+        &-list {
+            margin-top: 16px;
+        }
+
+        &-inner {
+            --grid-gutter-x: 20px;
+            --grid-gutter-y: 20px;
+        }
+
+        &-item {
+            border-radius: 10px;
+            background: var(--project-info-item-bg-color);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-wrap {
+            width: 57px;
+            height: 57px;
+            background: var(--project-info-wrap-bg-color);
+            border-radius: 8px;
+            @extend %df-center;
+
+            &-icon {
+                filter: var(--project-icon-color);
+            }
+        }
+
+    }
+    
+    &__inner {
+        
+        &-heading {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+        }
+
+        &-text {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+            margin-top: 4px;
+        }
+    }
+
+    &__product {
+        margin-top: 30px;
+        
+        &-list {
+            margin-top: 14px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &-wrap {
+            width: 151px;
+            height: 108px;
+            display: flex;
+            justify-content: center;
+
+            @include abstracts.screen(md) {
+                width: 110px;
+                height: 78.675px;
+                flex-shrink: 0;
+            }
+
+            &-img {
+                max-width: 100%;
+                height: 100%;
+
+                @include abstracts.screen(md) {
+                    width: 80px;
+                }
+            }
+        }
+
+        &-body {
+            
+            &-heading { 
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 146.667%;
+            }
+
+            &-inner {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                @include abstracts.screen(md) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+                }
+
+                &-price {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    line-height: 145.455%;
+                    margin-right: 20px;
+
+                    @include abstracts.screen(md) {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                &-btn {
+                    font-size: 1.5rem;
+                    
+                    @include abstracts.screen(md) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        &-line {
+            width: 100%;
+            height: 1px;
+            background: #D2D1D6;
+            margin: 20px 0;
+        }
+    }
+
+    &__form {
+        
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+            margin-top: 30px;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+            
+            &-btn {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+}

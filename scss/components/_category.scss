@@ -1,0 +1,80 @@
+@use "../abstracts";
+
+.category {
+    margin-top: 40px;
+
+    &__cate {
+        --grid-gutter-x: 51px;
+        --grid-gutter-y: 51px;
+
+        @include abstracts.screen(xl) {
+            --grid-gutter-x: 20px;
+            --grid-gutter-y: 20px;
+        }
+    }
+
+    &__browse {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+        margin-bottom: 20px;
+
+        @include abstracts.screen(lg) {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        background: var(--category-img-color);
+        border-radius: 8px;
+
+        @include abstracts.screen(lg) {
+            width: 88px;
+            height: 88px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        padding: 20px 26px 20px 20px;
+        gap: 20px;
+        border-radius: 16px;
+        background: var( --category-bg-color);
+    }
+
+    &__price {
+        color: var(--category-price-color);
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+
+        @include abstracts.screen(lg) {
+            font-size: 1.8rem;
+        }
+    }
+    &__new-product {
+        width: 231px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+        width: 100%;
+
+        @include abstracts.screen(lg) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 6px;
+    }
+
+    &__col {
+        flex: 1;
+    }
+
+}

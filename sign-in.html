@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <!-- Auth -->
+        <div class="auth">
+
+            <input type="checkbox" hidden name="" class="auth__input-checkbox" id="dots__checkbox">
+
+            <!-- auth intro -->
+            <div class="auth__intro d-md-none">
+                <a href="#" class="logo logo--center d-none d-md-flex">
+                    <img src="./assets/icons/logo.svg" alt="Grocery Mart" class="logo__img">
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <div class="auth__intro-body">
+                    <img src="./assets/icons/sign-1.svg" alt="intro" class="auth__intro-img">
+                    <p class="auth__intro-text"> The best of luxury brand values, high quality products, and innovative
+                        services
+                    </p>
+                </div>
+
+                <label for="dots__checkbox" class="auth__intro-dots d-none d-md-flex">
+                    <div class="auth__intro-dot auth__intro-dot--active"></div>
+                    <div class="auth__intro-dot"></div>
+                    <img src="./assets/icons/signins/arrow.svg" alt="" class="auth__intro-icon">
+                </label>
+            </div>
+
+            <!-- auth content -->
+            <div class="auth__content auth__content--show">
+                <div class="auth__body">
+                    <a href="./index.html" class="logo logo--center">
+                        <img src="./assets/icons/logo.svg" alt="Grocery Mart" class="logo__img">
+                        <h1 class="logo__title">grocerymart</h1>
+                    </a>
+
+                    <div class="auth__top">
+                        <h1 class="auth__top-heading">Hello Again!</h1>
+                        <p class="auth__top-desc"> Welcome back to sign in. As a returning customer, you have access to
+                            your previously saved all information.</p>
+                    </div>
+
+                    <!-- Form -->
+                    <form action="./index-logined.html" class="form">
+                        <div class="form__inner">
+                            <div class="form__inner-control">
+                                <input type="email" placeholder="Email" class="form__inner-input" required>
+                                <img src="./assets/icons/signins/email.svg" alt="" class="form__inner-icon">
+                                <img src="./assets/icons/error.svg" alt="" class="form__inner-control-error">
+                            </div>
+                            <span class="form__inner-error">Email is not in correct format</span>
+                        </div>
+
+                        <div class="form__inner">
+                            <div class="form__inner-control form__inner-control--pt-10">
+                                <input type="password" placeholder="Password" class="form__inner-input" required
+                                    minlength="6">
+                                <img src="./assets/icons/signins/pass.svg" alt="" class="form__inner-icon">
+                                <img src="./assets/icons/error.svg" alt="" class="form__inner-control-error">
+                            </div>
+                            <span class="form__inner-error">Password must be at least 6 characters</span>
+                        </div>
+
+                        <div class="form__box">
+                            <div class="form__confirm">
+                                <input type="checkbox" hidden name="" id="form__checkbox" class="form__confirm-input">
+                                <label for="form__checkbox" class="form__confirm-label">Set as default card</label>
+                            </div>
+
+                            <a href="./reset-password.html" class="form__box-help">Forgot password?</a>
+                        </div>
+
+                        <div class="auth__ctas">
+                            <button type="submit" class="auth__cta btn btn--primary">Sign Up</button>
+                            <button type="submit" class="auth__cta btn btn--outline">
+                                <img src="./assets/icons/signins/google.svg" alt="" class="auth__sign-in-icon">
+                                <span class="auth__cta-text">Sign in with Gmail</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="convert">
+                        <div class="convert__text">You have an account yet?</div>
+                        <a href="./sign-up.html" class="convert__link">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

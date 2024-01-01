@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment method | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- Payment -->
+    <main class="payment-pages">
+        <div class="container">
+
+            <!-- Section detail -->
+            <div class="section-detail">
+
+                <!-- Search bar -->
+                <div class="search-bar d-none d-md-flex">
+                    <input class="search-bar__input" placeholder="Search for item" type="text" name="" id="">
+                    <button class="search-bar__submit">
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar__submit-icon icon-color">
+                    </button>
+                </div>
+
+                <div class="section-detail__top section-detail__top--active">
+                    <div class="section-detail__group">
+                        <div class="section-detail__child">
+                            <a href="./index-logined.html" class="section-detail__child-text">Home</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="./checkout.html" class="section-detail__child-text">checkout</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="./shipping.html" class="section-detail__child-text">Shipping</a>
+                            <img src="./assets/icons/product-detail/arrow.svg" alt=""
+                                class="section-detail__child-arrow">
+                        </div>
+                        <div class="section-detail__child">
+                            <a href="#!" class="section-detail__child-text section-detail__child-text--active">Payment
+                                method</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- payment content -->
+            <div class="payment-content">
+                <div class="row">
+                    <div class="col-8 col-xl-12">
+                        <div class="payment__body">
+                            <section class="favourite__list">
+                                <div class="payment__top">
+                                    <h2 class="payment__top-heading">1. Shipping, arrives between Mon, May 16—Tue, May
+                                        24
+                                    </h2>
+                                    <label for="modal-address-new-shopping" class="payment__top-box">
+                                        <img src="./assets/icons/edia.svg" alt="" class="payment__top-box-img">
+                                        <span class="payment__top-box-text">Edit</span>
+                                    </label>
+                                </div>
+
+                                <div class="payment__top-wrap">
+                                    <div class="payment__top-inner-left">
+                                        <h3 class="payment__top-inner-left-heading">Imran Khan</h3>
+                                        <p class="payment__top-inner-left-text">Museum of Rajas, Sylhet Sadar, Sylhet
+                                            3100.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="payment__top-wrap">
+                                    <div class="payment__top-inner-left">
+                                        <h3 class="payment__top-inner-left-heading">Items details</h3>
+                                        <p class="payment__top-inner-left-text">2 items</p>
+                                    </div>
+                                    <div class="payment__top-inner-right">
+                                        <p class="payment__top-inner-right-text">View details</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="favourite__list">
+                                <div class="payment__shipping">
+                                    <h2 class="payment__shipping-heading">2. Shipping method</h2>
+                                </div>
+
+                                <div class="favourite__line"></div>
+
+                                <div class="payment__content">
+                                    <h3 class="payment__content-heading">Availeble Shipping method</h3>
+                                    <article class="payment__top-inner">
+                                        <img class="payment__top-inner-img" src="./assets/images/payment/payment-1.png"
+                                            alt="" class="payment__content-inner-img">
+                                        <div class="payment__wrap">
+                                            <div class="payment__wrap-left">
+                                                <h3 class="payment__wrap-left-heading">Fedex Delivery</h3>
+                                                <p class="payment__wrap-left-text">Delivery: 2-3 days work</p>
+                                            </div>
+                                        </div>
+                                        <div class="payment__wrap-right">
+
+                                            <label for="favourite-check-free" class="payment__wrap-right-box">
+                                                <input checked class="favourite__check-all-input" type="radio"
+                                                    name="payment__content-click" id="favourite-check-free">
+                                                <span class="payment__wrap-right-text">Free</span>
+                                            </label>
+                                        </div>
+                                    </article>
+                                    <article class="payment__top-inner">
+                                        <img class="payment__top-inner-img" src="./assets/images/payment/payment-2.png"
+                                            alt="" class="payment__content-inner-img">
+                                        <div class="payment__wrap">
+                                            <div class="payment__wrap-left">
+                                                <h3 class="payment__wrap-left-heading">Fedex Delivery</h3>
+                                                <p class="payment__wrap-left-text">Delivery: 2-3 days work</p>
+                                            </div>
+                                        </div>
+                                        <div class="payment__wrap-right">
+                                            <label for="favourite-check-price" class="payment__wrap-right-box">
+                                                <input class="favourite__check-all-input" type="radio"
+                                                    name="payment__content-click" id="favourite-check-price">
+                                                <span class="payment__wrap-right-text">$12.00</span>
+                                            </label>
+                                        </div>
+                                    </article>
+
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xl-12">
+                        <section class="favourite__list">
+                            <div class="payment__details">
+                                <h2 class="payment__details-heading">Payment Details</h2>
+                                <div class="payment__details-desc">Complete your purchase item by providing your payment
+                                    details order.</div>
+
+                                <form action="" class="form">
+                                    <div class="form__group">
+                                        <div class="form__group-inner form__inner">
+                                            <div class="form__group-wrap">
+                                                <label for="" class="form__inner-label">Email Address</label>
+                                            </div>
+                                            <div class="form__inner-control">
+                                                <input type="email" placeholder="Email" class="form__inner-input"
+                                                    required>
+                                                <img src="./assets/icons/error.svg" alt=""
+                                                    class="form__inner-control-error">
+                                            </div>
+                                            <span class="form__inner-error">Email is not in correct format</span>
+                                        </div>
+
+                                        <div class="form__group-inner">
+                                            <div class="form__group-wrap">
+                                                <label for="" class="form__inner-label">Card Holder</label>
+                                            </div>
+                                            <div class="form__inner-control">
+                                                <input type="email" placeholder="Card Holder" class="form__inner-input"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form__group-inner">
+                                            <div class="form__group-wrap">
+                                                <label for="" class="form__inner-label">Card Details</label>
+                                            </div>
+                                            <div class="form__inner-control">
+                                                <input type="email" placeholder="Card Details" class="form__inner-input"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__group-row">
+                                            <div class="form__group-inner">
+                                                <div class="form__group-control">
+                                                    <input type="email" placeholder="MM/YY" class="form__inner-input"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="form__group-inner">
+                                                <div class="form__inner-control">
+                                                    <input type="email" placeholder="CVC" class="form__inner-input"
+                                                        required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout__inner">
+                                        <div class="checkout__row">
+                                            <span class="checkout__row-label">Subtotal <span
+                                                    class="checkout__row-note">(items)</span></span>
+                                            <span class="checkout__row-number">3</span>
+                                        </div>
+                                        <div class="checkout__row">
+                                            <span class="checkout__row-label">Price <span
+                                                    class="checkout__row-note">(Total)</span></span>
+                                            <span class="checkout__row-number">$191.65</span>
+                                        </div>
+                                        <div class="checkout__row">
+                                            <span class="checkout__row-label">Shipping</span>
+                                            <span class="checkout__row-number">$10.00</span>
+                                        </div>
+                                        <div class="checkout__row checkout__row--active">
+                                            <span class="checkout__row-label">Estimated Total</span>
+                                            <span class="checkout__row-number">$201.65</span>
+                                        </div>
+                                    </div>
+
+                                    <a href="./index-logined.html">
+                                        <div class="checkout__cta">
+                                            <div class="checkout__cta-btn btn btn--primary btn--rounded">Pay $465.98
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script id="footer">
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <!-- Modal: add new shopping address -->
+    <input type="checkbox" hidden name="" class="modal-address-new" id="modal-address-new-shopping">
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__content">
+            <h2 class="modal__heading">Add new shipping address</h2>
+            <div class="modal__body">
+                <div class="form__row">
+
+                    <div class="form__inner">
+                        <div class="form__inner-control">
+                            <label for="form__inner-click-name"
+                                class="form__inner-label form__inner-label--small">Name</label>
+                            <input type="text" placeholder="Name" id="form__inner-click-name" class="form__inner-input">
+                        </div>
+                    </div>
+
+                    <div class="form__inner">
+                        <div class="form__inner-control">
+                            <label for="form__inner-click-Phone"
+                                class="form__inner-label form__inner-label--small">Phone</label>
+                            <input type="text" placeholder="Phone" id="form__inner-click-Phone"
+                                class="form__inner-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__inner">
+                    <div class="form__inner-control">
+                        <label for="form__inner-click-Phone"
+                            class="form__inner-label form__inner-label--small">Address</label>
+                        <div class="form__text-area">
+                            <textarea name="" id="" placeholder="Address (Area and street)"
+                                class="form__inner-input form__text-area-input"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__inner">
+                    <div class="form__inner-control">
+                        <label for="form__inner-click-Phone"
+                            class="form__inner-label form__inner-label--small">City/District/Town</label>
+                        <input type="text" placeholder="City/District/Town" id="form__inner-click-Phone"
+                            class="form__inner-input">
+                    </div>
+                </div>
+
+                <div class="form__inner form__box">
+                    <div class="form__confirm">
+                        <input type="checkbox" hidden name="" id="form__checkbox" class="form__confirm-input">
+                        <label for="form__checkbox" class="form__confirm-label">Set as default card</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <label for="modal-address-new-shopping" class="btn btn--text modal__btn">Cancel</label>
+                <label for="modal-address-new-shopping" class="btn btn--primary modal__btn">Create</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

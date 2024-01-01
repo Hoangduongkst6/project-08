@@ -1,0 +1,226 @@
+@use "../abstracts";
+
+.payment {
+    
+    &-pages {
+        margin-bottom: 44px;
+    }
+
+    &__body {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include abstracts.screen(md) {
+            gap: 20px;
+        }
+         
+        &-heading {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            line-height: 144.444%;
+        }
+
+        &-wrap {
+            display: flex;
+            border-radius: 20px;
+            background: var(--payment-top-inner-bg-color);
+            padding: 20px;
+            margin-top: 30px;
+            gap: 20px;
+
+            @include abstracts.screen(md) {
+                gap: 16px;
+            }
+        }
+
+        &-inner {
+            display: grid;
+            grid-template-columns: 0.2fr 3fr 0.2fr;
+            border-radius: 20px;
+            background: var(--payment-top-inner-bg-color);
+            padding: 20px;
+            margin-top: 30px;
+            gap: 20px;
+
+            @include abstracts.screen(md) {
+                grid-template-columns: 0.2fr 3fr;
+                grid-template-rows: 1fr 0.2fr;
+                gap: 16px;
+            }
+
+            &-left {    
+                
+                &-heading {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    line-height: 144.444%;
+
+                    @include abstracts.screen(md) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                &-text {
+                    font-size: 1.4rem;
+                    line-height: 146.667%;
+                    margin-top: 4px;
+                }
+            }
+
+            &-right {
+                margin-left: auto;
+
+                &-text {
+                    font-size: 1.5rem;
+                    line-height: 146.667%;
+                }
+            }
+
+            &-img {
+                width: 70px;
+                height: 54px;
+                border-radius: 10px;
+            }
+        }
+            
+        &-box {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+
+            &-img {
+                filter: var(--shipping-edit-icon-color)
+            }
+
+            &-text {
+                font-size: 1.8rem;
+                line-height: 144.444%;
+            }
+        }
+        
+    }
+
+    &__shipping {
+
+        &-heading {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+
+    &__content {
+        &-heading {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+            margin-top: 30px;
+
+            @include abstracts.screen(md) {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-left {
+
+            &-heading {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 144.444%;
+
+                @include abstracts.screen(md) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &-text {
+                line-height: 150%;
+                margin-top: 4px;
+                font-size: 1.4rem;
+            }
+        }
+
+        &-right {
+            display: grid;
+            align-items: center;
+            grid-template-columns: .2fr 0fr;
+
+            @include abstracts.screen(md) {
+                grid-column: 2 / 3;
+            }
+
+            &-text {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 144.444%;
+                margin-right: 14px;
+                color: #9E9DA8;
+            }
+
+            &-box {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                flex-direction: row-reverse;
+            }
+
+        }
+    }
+
+    &__details {
+
+        &-heading {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-desc {
+            font-size: 1.5rem;
+            line-height: 146.667%;
+            margin-top: 6px;
+
+            @include abstracts.screen(md) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

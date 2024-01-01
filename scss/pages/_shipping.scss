@@ -1,0 +1,156 @@
+@use "../abstracts";
+
+.shipping {
+    
+    &-pages {
+        padding-bottom: 50px;
+    } 
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
+    }
+
+    
+    &__address {
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include abstracts.screen(md) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+        }
+        
+        &-left {
+            
+            &-heading {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 144.444%;
+            }
+
+            &-text {
+                font-size: 1.5rem;
+                line-height: 146.667%;
+                margin-top: 4px;
+            }
+        }
+
+        &-right {
+            
+            &-cta {
+                width: min(247px, 100%);
+                gap: 10px;
+
+                &-icon {
+                    width: 24px;
+                    height: 24px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 0.1fr 3fr 70px;
+        margin-top: 30px;
+        gap: 16px;
+
+        @include abstracts.screen(md) {
+            grid-template-columns: 0.1fr 3fr;
+            grid-template-rows: 1fr 0.2fr;
+        }
+
+
+        &-inner {
+            &-name {
+                display: block;
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 144.444%;
+
+                @include abstracts.screen(md) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &-location {
+                display: inline-block;
+                font-size: 1.4rem;
+                line-height: 146.667%;
+                margin-top: 4px;
+            }
+        }
+
+        &-wrap {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @include abstracts.screen(md) {
+                grid-template-columns: 0.1fr 3fr;
+                grid-template-rows: 1fr 0.2fr;
+                gap: 14px;
+            }
+
+            &-text {
+                display: flex;
+                align-items: center;
+
+                @include abstracts.screen(md) {
+                    font-size: 1.4rem;
+                }
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: var(--shopping-gb-color);
+                    margin-left: 8px;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        &-edit {
+            display: flex;
+            align-items: flex-end;
+
+            &-wrap {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            &-text {
+                font-size: 1.8rem;
+                line-height: 144.444%;
+                margin-left: 10px;
+            }
+
+            &-icon {
+                filter: var(--shipping-edit-icon-color);
+            }
+        }
+    }
+
+    &__heading-h3 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+        margin: 30px 0;
+    }
+}

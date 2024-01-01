@@ -1,0 +1,112 @@
+@use "../abstracts";
+
+html.dark {
+    --text-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(16%) hue-rotate(167deg) brightness(107%) contrast(106%);
+    --body-bg-color: #292E39;
+    // header
+    --header-bg-color: #171C28;
+
+    // act-top
+    --act-top-bg-color: #292E39;
+    --act-box-shadow: rgba(0, 0, 0, 0.2);
+
+    // sub-nav
+    --sub-nav-bg-color: #292E39;
+    --sub-nav-color: #B9BABE;
+    --sub-nav-line: #171C28;
+    --sub-nav-before-color: brightness(0) saturate(100%) invert(15%) sepia(22%) saturate(540%) hue-rotate(183deg) brightness(98%) contrast(92%);
+    --sub-nav-box-shadow-color: rgba(23, 28, 40, 0.40);
+    --sub-nav-head-color: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(0%) hue-rotate(70deg) brightness(108%) contrast(108%);
+
+    // bras
+    --bras-color: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(359%) hue-rotate(223deg) brightness(114%) contrast(100%);;
+    
+    // drawer
+    --drawer-color-back: brightness(0) saturate(100%) invert(82%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(97%) contrast(78%);
+    
+    // category
+    --category-bg-color: #171C28;
+    --category-img-color: #292E39;
+
+    // product
+    --product-bg-color: #171C28;
+    --product-shadow: rgba(0, 0, 0, 0.20);
+    --product-heart-bg-color: #292E39;
+    --product-box-bg-color: #171C28;
+    --product-box-color: #fff;
+    --product-box-icon: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(0%) hue-rotate(280deg) brightness(107%) contrast(104%);
+    --product-box-heart-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(156deg) brightness(102%) contrast(101%);
+    --product-color: #D2D1D6;
+    
+    // category
+    --category-price-color: #fff;
+
+    // filter
+    --filter-shadow: rgba(0, 0, 0, 0.40);
+    --filter-bg-color: #292E39;
+    --filter-tag-bg-color: #171C28;
+    --filter-image-color: brightness(0) saturate(100%) invert(14%) sepia(23%) saturate(585%) hue-rotate(183deg) brightness(90%) contrast(88%);
+
+    --filter-select-color: #292E39;
+
+    // search
+    --search-input-gb-color: #292E39;
+    --search-icon-color: brightness(0) saturate(100%) invert(13%) sepia(16%) saturate(816%) hue-rotate(183deg) brightness(99%) contrast(88%);
+
+    // footer
+    --footer-gb-color: #171C28;
+
+    // auth
+    --auth-form-color: #B9BABE;
+    --auth-content-bg-color: #292E39;
+    --auth-content-color: #B9BABE;
+    --auth-sign-in-icon-color: brightness(0) saturate(100%) invert(93%) sepia(7%) saturate(109%) hue-rotate(191deg) brightness(82%) contrast(85%);;
+    --auth-content-cta-color: #B9BABE;
+
+    // section detail
+    --section-detail-top-bg-color: #171c28;
+    --section-detail-top-active-bg-color: #171c28;
+    --section-detail-top-shadow: rgba(23, 28, 40, 0.2);
+    
+    --pages-bg-color: #292E39;
+    
+    // --product-detail
+    --product-info-bg-color: #171c28;
+    --product__money-cta-color: #fff;
+    --product__tab-review-color: #171c28;
+
+    // act dropdown
+    --act-dropdown-bg-color: #2f3441;
+    --act-dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --act-dropdown-icon: brightness(0) saturate(100%) invert(16%) sepia(27%) saturate(452%) hue-rotate(186deg) brightness(98%) contrast(90%);
+    --act-dropdown-item-color: #171c28;
+
+    // favourite
+    --favourite-function-line: #292E39;
+    --favourite-check-out-bg-color: #171C28;
+    --favourite-check-out-shadow: rgba(23, 28, 40, 0.20);
+    --favourite-check-all-input: brightness(0) saturate(100%) invert(86%) sepia(9%) saturate(85%) hue-rotate(191deg) brightness(88%) contrast(85%);
+
+    // checkout
+    --checkout-gift-image-bg-color: #292E39;
+    --checkout-gift-image: rgba(23, 28, 40, 0.20);
+
+    // shopping
+    --shopping-gb-color: #fff;
+    --shipping-edit-icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(308deg) brightness(117%) contrast(101%);
+
+    // payment
+    --payment-top-inner-bg-color: #292E39;
+
+    // modal 
+    --modal-content-bg-color: #292E39;
+
+    // project
+    --project-inner-bg-color: #171C28;
+    --project-inner-shadow: rgba(23, 28, 40, 0.20);
+    --project-icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(249deg) brightness(108%) contrast(109%);
+    --project-group-link: #2f3441;
+    --project-info-item-bg-color: #292E39;
+    --project-info-wrap-bg-color: #171C28;
+}

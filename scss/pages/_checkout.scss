@@ -1,0 +1,132 @@
+@use "../abstracts";
+
+.checkout {
+
+    &-pages {
+        padding-bottom: 50px;
+    }
+
+    &__foot {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &-row {
+            display: flex;
+            width: 283px;
+
+            &-value,
+            &-label {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 144.444%;
+            }
+
+            &-label {
+
+                &--total {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    line-height: 145.455%;
+                }
+            }
+
+            &-value {
+                margin-left: auto;
+
+                &--total {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    line-height: 145.455%;
+                }
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        
+        &--active {
+            padding-top: 14px;
+            border-top: 1px solid var(--favourite-function-line);
+        }
+
+        &-label {
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        &-note {
+            font-weight: 400;
+        }
+
+        &-number {
+            margin-left: auto;
+            font-weight: 700;
+            line-height: 150%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    &__gift {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &--active {
+            margin-top: 30px;
+        }
+
+        &-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 76px;
+            height: 76px;
+            background-color: var(--checkout-gift-image-bg-color);
+            border-radius: 14px;
+            box-shadow: 0px 20px 60px 10px var(--checkout-gift-image-shadow);
+
+
+            &-img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+
+        &-box {
+            width: 270px;
+            
+            &-heading {
+                font-size: 1.8rem;
+                font-weight: 500;
+                line-height: 144.444%;
+
+                @include abstracts.screen(md) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &-text {
+                display: inline-block;
+                font-size: 1.4rem;
+                line-height: 142.857%;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__cta {
+        margin-top: 30px;
+
+        &-btn {
+        }
+    }
+}
