@@ -195,10 +195,14 @@
         background: transparent;
         cursor: pointer;
         width: 100%;
-        padding: 10px 20px;
+        padding: 14px 20px;
         
         @include abstracts.screen(lg) {
             justify-content: space-between;
+            padding: 12px 40px;
+        }
+
+        @include abstracts.screen(sm) {
             padding: 10px 20px;
         }
     
